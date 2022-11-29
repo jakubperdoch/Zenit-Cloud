@@ -7,8 +7,10 @@
 }
 body{
     overflow-x: hidden;
+    
 }
 nav{
+    padding: 1vw 20.5vw;
     overflow: hidden;
     display:grid;
     position: fixed;
@@ -17,19 +19,17 @@ nav{
     grid-template-columns: repeat(3,1fr);
     border-bottom: 0.1vw solid grey;
     width: 100%;
-    padding: 1vw 10%;
     padding-bottom: 0.7vw;
     align-items: center;
     background-image: url(assets/banner-bg.jpg);
     background-size: cover;
-    transition: background .5s;
 }
 button{
     transition: all 400ms ease;
     margin: 0 1%;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
-    border:0.10vw solid white;
+    border:0.1vw solid white;
     color: white;
     background-color: transparent;
     padding: 2% 5%;
@@ -37,20 +37,37 @@ button{
 }
 button:hover{
     background-color:#00A4B9 ;
-    border: 0.10vw solid #00A4B9;
+    border: 0.1vw solid #00A4B9;
     color: white;
     cursor: pointer;
+}
+.login{
+    background-color: transparent;
+    border: 0.1vw solid white;
+}
+.register{
+    background-color: #00BCD4;
+    border: 0.1vw solid  #00BCD4;
+
+}
+.login:hover{
+    background-color: white;
+    color: #00BCD4;
+    border: 0.1vw solid white;
+}
+.register:hover{
+    background-color: #00A4B9;
+    border: 0.1vw solid #00A4B9;
 }
 h1,h2,h3{
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
-
 .logo-zenit{
     letter-spacing: 0.02em;
     font-size: 1.2vw;
     color: white;
+    margin: -0.5vw;
 }
 .logo-cloud {
     font-size: 0.8vw;
@@ -61,7 +78,7 @@ h1,h2,h3{
     letter-spacing: 0.02em;
     display: flex;
     list-style: none;
-    margin: 0 15%;
+    margin: 0 10%;
     font-size: 0.7vw;
 }
 .nav_items li a{
@@ -76,7 +93,7 @@ h1,h2,h3{
 .nav-buttons{
     letter-spacing: 0.02em;
     display: flex;
-    margin: 0 15%;
+    justify-content: flex-end;
 }
 .background-wrapper{
     background-image: url(assets/banner-bg.jpg);
@@ -87,11 +104,12 @@ h1,h2,h3{
 }
 .domen-search{
     display: grid;
-    width: 50%;
+    width: 100%;
     grid-template-columns:repeat(5,1fr) ;
     grid-template-rows: repeat(3,1fr);
     text-align: center;
-    margin: 5% auto
+    margin: 10% auto;
+    padding: 0 20vw;
     
 }
 
@@ -117,8 +135,8 @@ h1,h2,h3{
         background-color: transparent;
         border: 0.1vw  solid white;
         color: white;
-        width: 80%;
-        margin-left: 11%;
+        width: 65%;
+        margin-left: 20%;
         font-size: 0.9vw;
         text-decoration: none;
 }
@@ -144,7 +162,7 @@ h1,h2,h3{
     width: 8vw;
     height: 2.5vw;
     grid-column: 5/6;
-    margin-left: -25%;
+    margin-left: -40%;
     font-size: 0.8vw;
 }
 .domen-bold{
@@ -154,13 +172,13 @@ h1,h2,h3{
 .offer{
     margin: 5% auto;
     display: grid;
-    width: 65%;
+    width: 100%;
     height: 12vw;
     grid-template-rows: repeat(5,1fr);
     grid-template-columns: repeat(3,1fr);
+    padding: 0 20vw;
 }
 .hosting-services{
-    margin-left: 1.3%;
     margin-bottom: 1%;
     font-size: 1vw;
     color: #00BCD4;
@@ -170,7 +188,6 @@ h1,h2,h3{
 }
 .offer-title{
     color: black;
-    margin-left: 1%;
     margin-bottom:1%;
     font-size: 2.5vw;
     grid-row: 2/3;
@@ -178,7 +195,6 @@ h1,h2,h3{
     letter-spacing: 0.002em;
 }
 .offer-text{
-    margin-left: 1%;
     margin-bottom: 7%;
     font-size: 1vw;
     color: #6A6A6A;
@@ -189,10 +205,9 @@ h1,h2,h3{
 
 .card{
     grid-row: 4/5;
-    padding: 10%;
     display: grid;
     height: 24vw;
-    width: 21vw;
+    width: 19vw;
     margin: 0 0.5vw;
     background-color: #F7F7F7;
     grid-template-rows: repeat(3,1fr);
@@ -228,12 +243,13 @@ h1,h2,h3{
     text-align: center;
     height: 15vw;
     width: 100%;
+    padding: 0 20vw;
 }
 .card-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: 2% auto;
-    width: 65%;
+    width: 100%;
 }
 
 .pricing-background{
@@ -256,10 +272,10 @@ h1,h2,h3{
 .price-card{
     margin-top: 5%;
     background-color: white;
-    width: 20vw;
+    width: 19vw;
     height: 45vw;
     padding-top: 15%;
-box-shadow: 0 0 4vw -1vw rgba(0, 0, 0, 0.37);
+    box-shadow: 0 0 4vw -1vw rgba(0, 0, 0, 0.37);
 }
 .cloud-title{
     font-size: 1.4vw;
@@ -323,12 +339,13 @@ box-shadow: 0 0 4vw -1vw rgba(0, 0, 0, 0.37);
 .blue-button{
     border: none;
     color: white;
-    background-color: #00A4B9;
+    background-color: #00BCD4;
+    border: 0.1vw solid #00BCD4;
 }
 .reviews{
-    padding: 5%;
+    padding: 1vw 20vw;
     background-color: #F7F7F7;
-    margin-top: 60%;
+    margin-top:40vw ;
     height: 36vw;
     display: grid;
     width: 100%;
@@ -361,7 +378,7 @@ box-shadow: 0 0 4vw -1vw rgba(0, 0, 0, 0.37);
             font-size: 1.2vw;
 }
 .review-lorem{
-    width: 70%;
+    width: 100%;
     line-height: 2vw;
     margin: 0 auto;
     color: #6a6a6ac2;
@@ -384,7 +401,7 @@ box-shadow: 0 0 4vw -1vw rgba(0, 0, 0, 0.37);
 }
 
 footer{
-    padding: 5vw 13%;
+    padding: 5vw 20vw;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
@@ -397,7 +414,7 @@ footer{
     line-height: 2.5vw;
 }
 .konfiguration h4{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-bottom: 4%;
 }
 .konfiguration span{
@@ -405,26 +422,27 @@ footer{
     font-size: 1vw;
 }
 .about-us{
-    width: 40vw;
+    width: 28vw;
     line-height: 2vw;
     font-size: 1vw;
-    height: 5vw;
+    margin-left: -10%;
+
 }
 .about-us h4{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-bottom: 4%;
 }
 .contacts h4{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-bottom: 4%;
 }
 .contacts h5{
     display: inline;
-        font-size: 1.1vw;
+    font-size: 1.1vw;
 
 }
 .contacts{
-    margin-left: 7%;
+
     line-height: 2.5vw;
     font-size: 1vw;
 }
