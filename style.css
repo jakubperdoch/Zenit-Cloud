@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 0.02em;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    overflow: hidden;
+    display:grid;
+    position: fixed;
+    top: 0;
+    height: 5vw;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: 0.1vw solid grey;
+    width: 100%;
+    padding: 1vw 10%;
+    padding-bottom: 0.7vw;
+    align-items: center;
+    background-image: url(assets/banner-bg.jpg);
+    background-size: cover;
+    transition: background .5s;
+}
+button{
+    transition: all 400ms ease;
+    margin: 0 1%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    border:0.10vw solid white;
+    color: white;
+    background-color: transparent;
+    padding: 2% 5%;
+    font-size: 0.7vw;
+}
+button:hover{
+    background-color:#00A4B9 ;
+    border: 0.10vw solid #00A4B9;
+    color: white;
+    cursor: pointer;
+}
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+.logo-zenit{
+    letter-spacing: 0.02em;
+    font-size: 1.2vw;
+    color: white;
+}
+.logo-cloud {
+    font-size: 0.8vw;
+}
+
+.nav_items{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    display: flex;
+    list-style: none;
+    margin: 0 15%;
+    font-size: 0.7vw;
+}
+.nav_items li a{
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+    margin: 0 1vw;
+}
+.nav_items li a:hover{
+    color:#00A4B9 ;
+}
+.nav-buttons{
+    letter-spacing: 0.02em;
+    display: flex;
+    margin: 0 15%;
+}
+.background-wrapper{
+    background-image: url(assets/banner-bg.jpg);
+    padding-top:3vw ;
+    width: 100%;
+    height: 40vw;
+    background-size:cover;
+}
+.domen-search{
+    display: grid;
+    width: 50%;
+    grid-template-columns:repeat(5,1fr) ;
+    grid-template-rows: repeat(3,1fr);
+    text-align: center;
+    margin: 5% auto
+    
+}
+
+.domen-search label{
+    font-size: 1.0vw;
+    display: flex;
+}
+.check{
+    height: 1.1vw;
+    width: 1.4vw;
+    margin-right:0.5vw;
+}
+
+.domen-search h1{
+    letter-spacing: 0.02em;
+    font-size: 2.3vw;
+    grid-column: span 5;
+}
+.input-domen{
+    grid-column: span 4;
+    padding-left: 2%;
+        margin-top: 1vw;
+        background-color: transparent;
+        border: 0.1vw  solid white;
+        color: white;
+        width: 80%;
+        margin-left: 11%;
+        font-size: 0.9vw;
+        text-decoration: none;
+}
+.domen-check-sk{
+    grid-column: 2/3;
+    grid-row: 3;
+}
+.domen-check-eu {
+    grid-column: 3/4;
+        grid-row: 3;
+}.domen-check-com {
+    grid-column: 4/5;
+        grid-row: 3;
+}
+
+.domen-check{
+    color: white;
+    margin-top: 1vw;
+    margin-right: 60%;
+}
+.domen-button{
+    margin-top: 1vw;
+    width: 8vw;
+    height: 2.5vw;
+    grid-column: 5/6;
+    margin-left: -25%;
+    font-size: 0.8vw;
+}
+.domen-bold{
+    font-weight: bold;
+    font-size: 1vw;
+}
+.offer{
+    margin: 5% auto;
+    display: grid;
+    width: 65%;
+    height: 12vw;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+.hosting-services{
+    margin-left: 1.3%;
+    margin-bottom: 1%;
+    font-size: 1vw;
+    color: #00BCD4;
+    font-weight: bold;
+    grid-row: 1/2;
+    grid-column: span 3;
+}
+.offer-title{
+    color: black;
+    margin-left: 1%;
+    margin-bottom:1%;
+    font-size: 2.5vw;
+    grid-row: 2/3;
+    grid-column: span 3;
+    letter-spacing: 0.002em;
+}
+.offer-text{
+    margin-left: 1%;
+    margin-bottom: 7%;
+    font-size: 1vw;
+    color: #6A6A6A;
+    line-height: 1.3vw;
+    grid-row: 3/4;
+    grid-column: span 3;
+}
+
+.card{
+    grid-row: 4/5;
+    padding: 10%;
+    display: grid;
+    height: 24vw;
+    width: 21vw;
+    margin: 0 0.5vw;
+    background-color: #F7F7F7;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+
+}
+.card-icon{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8vw;
+    width: 8vw;
+    border: 2.8vw solid #00BCD4;
+    border-radius: 50%;
+    background-color: #00BCD4;
+    color: white;
+    font-size: 2.5vw;
+}
+
+.card-title{
+    color: #1E1E1E;
+    font-size: 1.2vw;
+}
+
+.card-span{
+    color: #6A6A6A;
+    letter-spacing: 0.02em;
+    font-size: 0.8vw;
+}
+.pricing{
+    text-align: center;
+    height: 15vw;
+    width: 100%;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 2% auto;
+    width: 65%;
+}
+
+.pricing-background{
+    background-image:url(assets/pricing-bg.jpg);
+    background-size: cover;    
+    height: 30vw;
+    width: 100%;
+    margin-top: 30vw;
+    padding-top: 5%;
+}
+.pricing-title{
+    color: white;
+    margin-bottom: 1%;
+    font-size:2vw ;
+}
+.pricing-text{
+    color: white;
+    font-size: 1vw;
+}
+.price-card{
+    margin-top: 5%;
+    background-color: white;
+    width: 20vw;
+    height: 45vw;
+    padding-top: 15%;
+box-shadow: 0 0 4vw -1vw rgba(0, 0, 0, 0.37);
+}
+.cloud-title{
+    font-size: 1.4vw;
+}
+.price-background{
+    background-color: #00A4B9;
+    height: 6vw;
+    width: 13vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding: 9%;
+    color: white;
+}
+.price-background h2{
+    color: white;
+    font-size: 1.5vw;
+}
+.price-background span {
+    color: white;
+    font-size: 1vw;
+}
+.fa-check{
+    color: purple;
+    margin-right: 2%;
+}
+.gradient{
+    background: rgb(89, 2, 130);
+    background: linear-gradient(90deg, rgba(89, 2, 130, 1) 0%, rgba(49, 11, 92, 1) 62%, rgba(37, 64, 207, 1) 100%);
+    border: none;
+    color: white;
+}
+.price-description{
+    color: #6A6A6A;
+    margin-bottom: 5%;
+    font-size: 1vw;
+
+}
+.price-icons{
+    margin-top: 15%;
+    border-top: 0.2vw solid rgba(128, 128, 128, 0.123);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    text-align: left;
+    line-height: 3vw;
+    font-size: 0.8vw;
+    color: #6A6A6A;
+}
+
+.price-button{
+    margin-top: 25%;
+    height: 3vw;
+    width: 10vw;
+    font-size: 1.1vw;
+}
+.gradient:hover{
+    border: none;
+}
+.blue-button{
+    border: none;
+    color: white;
+    background-color: #00A4B9;
+}
+.reviews{
+    padding: 5%;
+    background-color: #F7F7F7;
+    margin-top: 60%;
+    height: 36vw;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,1fr);
+    text-align: center;
+}
+.review-text{
+    color: #00A4B9;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.review-title{
+    color: #1E1E1E;
+    margin-top: 1%;
+    font-size: 2vw;
+    margin-bottom: 4%;
+}
+.review-icon{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+            padding-top: 1.1%;
+            height: 3vw;
+            width: 3vw;
+            border-radius: 50%;
+            background: rgb(89, 2, 130);
+            background: linear-gradient(90deg, rgba(89, 2, 130, 1) 0%, rgba(49, 11, 92, 1) 62%, rgba(37, 64, 207, 1) 100%);
+            color: white;
+            font-size: 1.2vw;
+}
+.review-lorem{
+    width: 70%;
+    line-height: 2vw;
+    margin: 0 auto;
+    color: #6a6a6ac2;
+    font-size: 1.3vw;
+}
+.review-autor{
+    color: black;
+    margin-top: 2%;
+    font-size: 1.6vw;
+}
+.autor-job{
+    color: #00A4B9;
+    font-size: 1.2vw;
+    margin-top: 1%;
+}
+.dots-icon{
+    color: #00A4B9;
+    font-size: 2.5vw;
+    margin-top: 2%;
+}
+
+footer{
+    padding: 5vw 13%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    background-image: url(assets/footer-bg.jpg);
+    background-size: cover;
+    color: white;
+    height: 30vw;
+}
+.konfiguration{
+    line-height: 2.5vw;
+}
+.konfiguration h4{
+    font-size: 1.5vw;
+    margin-bottom: 4%;
+}
+.konfiguration span{
+    color:#b8b7b7;
+    font-size: 1vw;
+}
+.about-us{
+    width: 40vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    height: 5vw;
+}
+.about-us h4{
+    font-size: 1.5vw;
+    margin-bottom: 4%;
+}
+.contacts h4{
+    font-size: 1.5vw;
+    margin-bottom: 4%;
+}
+.contacts h5{
+    display: inline;
+        font-size: 1.1vw;
+
+}
+.contacts{
+    margin-left: 7%;
+    line-height: 2.5vw;
+    font-size: 1vw;
+}
+.footer-border{
+    border-top: 0.1vw solid #f7f7f74f;
+    margin-top: 3%;
+    width: 100%;
+    grid-column: span 3;
+}
+.copyright{
+    grid-column:2/3 ;
+    font-size: 1vw;
+    margin: 15% auto;
+
+}
