@@ -9,35 +9,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4a103ec2ad.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/icon" href="assets/favicon.ico"/>
 <title>Zenit CLOUD</title>
 </head>
 
 <body>    
     <div class="background-wrapper">
             <header>
-                <nav>
-                    <h2 class="logo-zenit">Zenit <span class="logo-cloud">CLOUD</span></h2>
+                <nav class="navigation">
+                    <a href="index.html" class="logo"><h2 class="logo-zenit">ZENIT <span class="logo-cloud">CLOUD</span></h2></a>
                     <ul class="nav_items">
-                        <li><a href="#">Úvod</a></li>
-                        <li><a href="#">O nás</a></li>
-                        <li><a href="#">Služby</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a class="nav-link" href="index.html">Úvod</a></li>
+                        <li><a class="nav-link" href="about.html">O nás</a></li>
+                        <li><a class="nav-link" href="services.html">Služby</a></li>
+                        <li><a class="nav-link" href="contacts.html">Kontakt</a></li>
                     </ul>
                     <div class="nav-buttons">
-                        <button class="login">Prihlásiť</button>
-                        <button class="register">Registrovať</button>
+                        <a href="login.html"><button class="login">Prihlásiť</button></a>
+                        <a href="register.html"><button class="register">Registrovať</button></a>
                     </div>
                 </nav>
             </header>
             <main>
+                <section class="popup">
+                    <div class="popup-box">
+                        <div class="close"></div>
+                        <section class="popup-img"> <img src="assets/cloudy.png" alt=""></section>
+                        <section class="popup-content">
+                            <section class="popup-text">
+                                <h3>Špeciálna zľava</h3>
+                                <h4>10% <span>zo</span></h4>
+                                <span>všetkých hostingových služieb <br> končí za: </span>
+                                <section class="timer">
+                                    <span id="time"></span>
+                                </section>
+                            </section>
+                        </section>
+                    </div>
+                </section>
                 <form action="" class="domen-search">
                     <h1>Vyhľadajte dostupnú doménovú adresu</h1>
                     <input type="text" placeholder="Sem zadajte doménu ..." class="input-domen">
-                    <label for="" class="domen-check-eu domen-check"><input type="checkbox" class="check"><span
+                    <label for="" class="domen-check-eu domen-check check"><input type="checkbox" class="check"><span
                             class="domen-bold">.eu</span> (10€/yr)</label>
-                    <label for="" class="domen-check-sk domen-check"><input type="checkbox" class="check"><span
+                    <label for="" class="domen-check-sk domen-check check"><input type="checkbox" class="check"><span
                             class="domen-bold">.sk</span> (12€/yr)</label>
-                    <label for="" class="domen-check-com domen-check"><input type="checkbox" class="check"><span
+                    <label for="" class="domen-check-com domen-check check"><input type="checkbox" class="check"><span
                             class="domen-bold">.com</span>(8€/yr)</label>
                     <button class="domen-button">Vyhľadať</button>
                 </form>
@@ -112,7 +129,7 @@
                         <i class="fa fa-check"></i><span>100 Prémiových Tém</span><br>
                         <i class="fa fa-check"></i><span>Možnosť Zrušiť alebo Vylepšiť</span><br>
                     </div>
-                    <button class="price-button gradient">Vybrať Cloud</button>
+                    <button class="price-button gradient-button">Vybrať Cloud</button>
                 </div>
                 <div class="advanced-cloud price-card">
                     <h3 class="cloud-title">ADVANCED CLOUD</h3>
@@ -167,6 +184,7 @@
         <div class="footer-border"></div>
         <span class="copyright">Copyright 2022 Zenit Cloud Hosting Company</span>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

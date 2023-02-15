@@ -11,7 +11,7 @@
     <link rel="icon" type="image/icon" href="assets/favicon.ico"/>
     <title>Zenit CLOUD</title>
 </head>
-<body class="register-body">
+<body>
     <header>    
         <div class="background-img"></div>
         <nav class="login-nav">
@@ -29,18 +29,38 @@
         </nav>
     </header>
     <section class="login-heading">
-        <h1 class="login-title">Registrácia nového uživateľa</h1>
+        <h1 class="login-title">Kontaktujte Nás</h1>
         <a href="index.html" class="home-link">Úvod</a>
         <span>/</span>
-        <a href="register.html" class="login-link">Registrácia</a>
+        <a href="contacts.html" class="login-link">Kontakt</a>
     </section>
-        <form action="#" class="register-form login-form">
-            <input type="text" placeholder="Vaše prihlasovacie meno/email" class="login-email">
-            <input type="password" placeholder="Vaše prihlasovacie heslo" class="login-password">
-            <input type="password" placeholder="Zopakujte heslo" class="register-password login-password">
-            <input type="button" value="REGISTROVAŤ" class="register login-button register-button">
+    <section class="contact-us-grid">
+        <form action="#" class="contact-us-form">
+            <input type="text" placeholder="Vaše celé meno" class="contact-name">
+            <input type="text" placeholder="Vaša emailová adresa" class="contact-email">
+            <input type="text" placeholder="Predmet správy" class="contact-thing">
+            <input type="text" placeholder="Vaša správa" class="contact-message">
+            <input type="button" value="ODOSLAŤ SPRÁVU" class="contact-button login-button register">
         </form>
-    <section class="login-reviews reviews">
+        <section class="contact">
+            <span class="hosting-services">Kontaktujte Nás
+            </span>
+            <h2 class="offer-title contact-title">Zostaňme v kontakte</h2>
+            <span class="offer-text contact-text">Neviete sa rozhodnúť, niečo Vám nefunguje, alebo len potrebujete poradiť? Neváhajte a kontaktujete nás.
+            </span>
+            <section class="contact-icons">
+                <i class="fa fa-support support contact-icon"></i>
+                <i class="fa fa-phone contact-icon"></i>
+                <i class="fa fa-envelope contact-icon"></i>
+                <i class="fa fa-globe contact-icon"></i>
+                <span class="icon-text">0900-111-222</span>
+                <span class="icon-text">contact@zcloud.eu</span>
+                <span class="icon-text">support@zcloud.eu</span>
+                <span class="icon-text">https://zcloud.eu</span>
+            </section>
+        </section>
+    </section>
+    <section class="reviews">
         <span class="review-text">Hodnotenie</span>
         <h2 class="review-title">Napísali o nás</h2>
         <i class="fa fa-quote-right review-icon"></i>
@@ -73,6 +93,6 @@
         <div class="footer-border"></div>
         <span class="copyright">Copyright 2022 Zenit Cloud Hosting Company</span>
     </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
